@@ -31,7 +31,7 @@ def pred(stock,test,days):
     algo.fit(x_tr,y_tr)
     acu=algo.score(x_ts,y_ts)
     prd=algo.predict(x2)
-    result={'stock':stock,'test_size':test,'no. of days':days,'accuracy':acu,'prediction':list(prd)}
+    result={'stock':stock,'test_size':test,'no_of_days':days,'accuracy':acu,'prediction':list(prd)}
     return jsonify(result)
 
 if __name__ == "__main__":
